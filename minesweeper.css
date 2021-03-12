@@ -1,0 +1,84 @@
+:root {
+    --color-primary: #00ff51;
+    --color-dark: #1a1a1a;
+    --color-light: #fafafa;
+}
+
+*,
+*:focus {
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    outline: none;
+
+    font-family: Roboto, sans-serif;
+
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--color-dark);
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.two-column-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+}
+
+.left,
+.right {
+    height: 100%;
+}
+
+.left {
+    background: var(--color-dark);
+}
+
+.title {
+    color: var(--color-primary);
+
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+
+.subtitle {
+    color: var(--color-light);
+
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.right {
+    background: var(--color-primary);
+}
+
+.right > a > button {
+    background: var(--color-dark);
+    color: var(--color-light);
+
+    width: 40rem;
+    height: 6rem;
+
+    border-radius: 999rem;
+
+    font-size: 1.8rem;
+
+    cursor: pointer;
+}
